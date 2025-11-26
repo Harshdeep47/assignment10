@@ -1,0 +1,23 @@
+#include <iostream> #include <unordered_map> using namespace std;
+
+int main() {
+int nums[] = {2, 3, 2, 4, 3, 2};
+ 
+int n = 6;
+
+
+unordered_map<int, int> freq;
+
+
+// for-each loop to count frequency for (int x : nums) {
+freq[x]++;
+}
+
+
+// print frequencies using for-each over map for (auto p : freq) {
+cout << p.first << " -> " << p.second << " times\n";
+}
+
+
+return 0;
+}
